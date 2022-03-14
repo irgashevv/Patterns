@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Behaviors\Quack;
+namespace Str\Behaviors\Quack;
 
-use App\Interfaces\QuackBehavior;
+use Str\Interfaces\QuackBehavior;
 
 class Squeak implements QuackBehavior
 {

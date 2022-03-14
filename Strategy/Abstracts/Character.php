@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Abstracts;
+namespace Str\Abstracts;
 
-use App\Interfaces\WeaponBehavior;
+use Str\Interfaces\WeaponBehavior;
 
 abstract class Character
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Characters;
+namespace Str\Characters;
 
-use App\Abstracts\Character;
-use App\Behaviors\UseWeapon\KnifeBehavior;
+use Str\Abstracts\Character;
+use Str\Behaviors\UseWeapon\KnifeBehavior;
 
 class Queen extends Character
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Ducks;
+namespace Str\Ducks;
 
-use App\Abstracts\Duck;
-use App\Behaviors\Fly\FlyWithWings;
-use App\Behaviors\Quack\Quack;
+use Str\Abstracts\Duck;
+use Str\Behaviors\Fly\FlyWithWings;
+use Str\Behaviors\Quack\Quack;
 
 class MallardDuck extends Duck
 {

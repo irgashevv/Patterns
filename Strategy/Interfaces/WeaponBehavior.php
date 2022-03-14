@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Interfaces;
+namespace Str\Interfaces;
 
 interface WeaponBehavior
 {

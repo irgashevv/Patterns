@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Abstracts;
+namespace Str\Abstracts;
 
-use App\Interfaces\FlyBehavior;
-use App\Interfaces\QuackBehavior;
+use Str\Interfaces\FlyBehavior;
+use Str\Interfaces\QuackBehavior;
 
 abstract class Duck
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Ducks;
+namespace Str\Ducks;
 
-use App\Abstracts\Duck;
-use App\Behaviors\Fly\FlyNoWay;
-use App\Behaviors\Quack\MuteQuack;
-use App\Interfaces\FlyBehavior;
+use Str\Abstracts\Duck;
+use Str\Behaviors\Fly\FlyNoWay;
+use Str\Behaviors\Quack\MuteQuack;
+use Str\Interfaces\FlyBehavior;
 
 class ModelDuck extends Duck
 {

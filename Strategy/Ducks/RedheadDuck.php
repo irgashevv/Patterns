@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Ducks;
+namespace Str\Ducks;
 
-use App\Abstracts\Duck;
+use Str\Abstracts\Duck;
 
 class RedheadDuck extends Duck
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Behaviors\UseWeapon;
+namespace Str\Behaviors\UseWeapon;
 
-use App\Interfaces\WeaponBehavior;
+use Str\Interfaces\WeaponBehavior;
 
 class KnifeBehavior implements WeaponBehavior
 {

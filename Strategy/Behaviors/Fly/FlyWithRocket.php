@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Behaviors\Fly;
+namespace Str\Behaviors\Fly;
 
-use App\Interfaces\FlyBehavior;
+use Str\Interfaces\FlyBehavior;
 
 class FlyWithRocket implements FlyBehavior
 {

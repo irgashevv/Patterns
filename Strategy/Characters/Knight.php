@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Characters;
+namespace Str\Characters;
 
-use App\Abstracts\Character;
-use App\Behaviors\UseWeapon\BowAndArrowBehavior;
+use Str\Abstracts\Character;
+use Str\Behaviors\UseWeapon\BowAndArrowBehavior;
 
 class Knight extends Character
 {

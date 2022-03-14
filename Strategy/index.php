@@ -1,10 +1,10 @@
 <?php
 
-use App\Behaviors\Fly\FlyWithRocket;
-use App\Behaviors\UseWeapon\AxeBehavior;
-use App\Characters\Queen;
-use App\Ducks\MallardDuck;
-use App\Ducks\ModelDuck;
+use Str\Characters\Queen;
+use Str\Behaviors\Fly\FlyWithRocket;
+use Str\Behaviors\UseWeapon\AxeBehavior;
+use Str\Ducks\MallardDuck;
+use Str\Ducks\ModelDuck;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 

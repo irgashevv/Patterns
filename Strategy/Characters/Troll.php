@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Characters;
+namespace Str\Characters;
 
-use App\Abstracts\Character;
-use App\Behaviors\UseWeapon\AxeBehavior;
+use Str\Abstracts\Character;
+use Str\Behaviors\UseWeapon\AxeBehavior;
 
 class Troll extends Character
 {
