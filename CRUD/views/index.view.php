@@ -1,5 +1,9 @@
 <?php require 'header.php'; ?>
-<h1>My tasks</h1>
+<?php foreach ($users as $user) : ?>
+    <li>
+        <?= $user->name ?>
+    </li>
+<?php endforeach; ?>
 <h1>Enter a name</h1>
 
 <form action="/CRUD/names" method="POST">
