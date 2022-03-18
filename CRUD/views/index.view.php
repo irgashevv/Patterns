@@ -1,14 +1,10 @@
 <?php require 'header.php'; ?>
 <h1>My tasks</h1>
-<ul>
-    <?php foreach ($tasks as $task) : ?>
-        <li>
-            <?php if ($task->completed) : ?>
-                <strike><?= $task->description ?> </strike>
-            <?php else : ?>
-                <?= $task->description ?>
-            <?php endif; ?>
-        </li>
-    <?php endforeach; ?>
-</ul>
+<h1>Enter a name</h1>
+
+<form action="/CRUD/names" method="POST">
+    <input type="text" name="name"/>
+    <button type="submit">Send</button>
+</form>
+
 <?php require 'footer.php'; ?>
