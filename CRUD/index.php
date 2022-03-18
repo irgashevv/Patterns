@@ -1,11 +1,7 @@
 <?php
 
+$query = require_once 'bootstrap.php';
 
-require_once __DIR__ . '/../vendor/autoload.php';
-require_once 'functions.php';
-require_once 'Task.php';
-$pdo = ConnectToDb();
-
-$tasks = FetchAllTasks($pdo);
+$tasks = $query->selectAll('todos');
 
 require_once 'index.view.php';
