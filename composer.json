@@ -10,7 +10,8 @@
 
     "minimum-stability": "dev",
     "require": {
-        "phpro/grumphp": "^1.5"
+        "phpro/grumphp": "^1.5",
+      "ext-pdo": "*"
     },
     "autoload": {
         "psr-4": {
