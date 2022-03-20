@@ -1,3 +1,3 @@
-<?php require 'header.php'; ?>
+<?php require 'templates/header.php'; ?>
 <h1>Contact</h1>
-<?php require 'footer.php'; ?>
+<?php require 'templates/footer.php'; ?>

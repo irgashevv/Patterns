@@ -1,6 +1,6 @@
 <?php
 
-$app['database']->insert('users', [
+$queryBuilder->insert('users', [
     'name' => $_POST['name'],
 
 ]);

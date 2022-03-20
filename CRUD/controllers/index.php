@@ -1,5 +1,5 @@
 <?php
 
-$users = $app['database']->selectAll('users');
+$users = $queryBuilder->selectAll('users');
 
 require 'views/index.view.php';

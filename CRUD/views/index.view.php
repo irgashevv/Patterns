@@ -1,4 +1,4 @@
-<?php require 'header.php'; ?>
+<?php require 'templates/header.php'; ?>
 <?php foreach ($users as $user) : ?>
     <li>
         <?= $user->name ?>
@@ -11,4 +11,4 @@
     <button type="submit">Send</button>
 </form>
 
-<?php require 'footer.php'; ?>
+<?php require 'templates/footer.php'; ?>
