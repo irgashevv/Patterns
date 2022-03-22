@@ -1,6 +1,6 @@
 <?php
 
-namespace Observers;
+namespace Obs\Observers;
 
 use Obs\Interfaces\DisplayElement;
 use Obs\Interfaces\Observer;
@@ -18,14 +18,14 @@ class CurrentConditionsDisplay implements Observer, DisplayElement
         $weatherData->registerObserver($this);
     }
 
-    public function update(float $temperature, float $humidity, float $pressure)
+    public function update()
     {
-        $this->temperature = $temperature;
-        $this->humidity = $humidity;
+        $this->temperature = $this->weatherData->getTemperature();
+        $this->humidity = $this->weatherData->getHumidity();
     }
 
     public function display(): string
     {
-        return "Current conditions are: Temperature: $this->temperature; Humidity: $this->humidity";
+        return "Current conditions are: Temperature: $this->temperature; Humidity: $this->humidity <br>";
     }
 }

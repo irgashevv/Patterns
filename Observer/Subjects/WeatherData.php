@@ -1,6 +1,6 @@
 <?php
 
-namespace Subjects;
+namespace Obs\Subjects;
 
 use Obs\Interfaces\Observer;
 use Obs\Interfaces\Subject;
@@ -22,11 +22,12 @@ class WeatherData implements Subject
         unset($this->observers[$observer]);
     }
 
-    public function notifyObservers()
+    public function setMeasurements(float $temperature, float $humidity, float $pressure)
     {
-        foreach ($this->observers as $observer) {
-            $observer->update($this->temperature, $this->humidity, $this->pressure);
-        }
+        $this->temperature = $temperature;
+        $this->humidity = $humidity;
+        $this->pressure = $pressure;
+        $this->measurementsChanged();
     }
 
     public function measurementsChanged()
@@ -34,11 +35,34 @@ class WeatherData implements Subject
         $this->notifyObservers();
     }
 
-    public function setMeasurements(float $temperature, float $humidity, float $pressure)
+    public function notifyObservers()
     {
-        $this->temperature = $temperature;
-        $this->humidity = $humidity;
-        $this->pressure = $pressure;
-        $this->measurementsChanged();
+        foreach ($this->observers as $observer) {
+            $observer->update();
+        }
+    }
+
+    /**
+     * @return float
+     */
+    public function getTemperature(): float
+    {
+        return $this->temperature;
+    }
+
+    /**
+     * @return float
+     */
+    public function getHumidity(): float
+    {
+        return $this->humidity;
+    }
+
+    /**
+     * @return float
+     */
+    public function getPressure(): float
+    {
+        return $this->pressure;
     }
 }
